@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up | Instagram</title>
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="/signup.css">
     <link rel="icon" href="logo.png">
 
 </head>
@@ -14,8 +14,8 @@
 
     <div class="container0">
         <div class="insta">
-            <img src="insta.png" alt="">
-
+            <img src="/insta.png" alt="">
+            
 
             <div class="content">
                 <p>
@@ -26,29 +26,31 @@
                 </p>
             </div>
             <div class="btn">
-                <button class="button"><img src="face.png" alt="#">
+                <button class="button"><img src="/face.png" alt="#">
                     <p>Log in with Facebook</p>
                 </button>
             </div>
-
+            
             <div class="or">
                 <div id="first">
-
+                    
                 </div>
                 <p class="orr">OR</p>
                 <div id="second">
-
+                    
                 </div>
             </div>
+
+            <form action="/user/signup" method="POST">
             <div class="form">
 
                 <label for="name"></label>
 
-                <input type="email" class="name" placeholder="Phone Number , username or email">
-                <input type="fullName" class="name" placeholder="Full Name">
-                <input type="userName" class="name" placeholder="Username">
+                <input type="email" name="email" class="name" placeholder="Phone Number , username or email">
+                <input type="fullName" name="fullName" class="name" placeholder="Full Name">
+                <input type="userName" name="userName" class="name" placeholder="Username">
 
-                <input type="password" class="password" placeholder="password">
+                <input type="password" name="password" class="password" placeholder="password">
             </div>
 
             <div class="content1">
@@ -68,8 +70,11 @@
             </div>
 
         </div>
+
+    </form>
+
         <div class="signup">
-            <span class="cont">Have an account?<a href="index.ejs">Log in</a></span>
+            <span class="cont">Have an account?<a href="/user/signin">Log in</a></span>
 
         </div>
     </div>
@@ -83,13 +88,13 @@
 
         
             <div class="black">
-                    <img src="gplay.png" alt="">
+                    <img src="/gplay.png" alt="">
                     <p id="get">GET IT ON</p>
                     <span id="gplay">Google Play</span>
             </div>
     
             <div class="black1">
-                <img src="micro.png" alt="">
+                <img src="/micro.png" alt="">
                 <p id="get1">Get it from</p>
                 <span id="micro">Microsoft</span>
         </div>
